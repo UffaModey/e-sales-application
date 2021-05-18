@@ -81,35 +81,6 @@ namespace salesApplication
 
             salesFile.Close();
 
-            /*Excel.Application salesFile = new Excel.Application();
-            Excel.Workbook salesWorkBook = salesFile.Workbooks.Open("salesFile.xlxs");
-            Excel.Worksheet salesWorkSheet = (Excel.Worksheet)salesWorkBook.Worksheets.get_Item(1);
-
-            Excel.Range salesRange = salesWorkSheet.UsedRange;
-            int totalRows = salesRange.Rows.Count;
-            int totalColumns = salesRange.Columns.Count;
-
-
-            string firstValue, secondValue, thirdValue, fourthValue;
-
-            for (int rowCount = 2; rowCount <= totalRows; rowCount++)
-            {
-                firstValue = Convert.ToString((salesRange.Cells[rowCount, 1] as Excel.Range).Text);
-                secondValue = Convert.ToString((salesRange.Cells[rowCount, 2] as Excel.Range).Text);
-                thirdValue = Convert.ToString((salesRange.Cells[rowCount, 3] as Excel.Range).Text);
-                fourthValue = Convert.ToString((salesRange.Cells[rowCount, 4] as Excel.Range).Text);
-
-                Console.WriteLine(firstValue + "\t" + secondValue + "\t" + thirdValue + "\t" + fourthValue);
-
-            }
-
-            salesWorkBook.Close();
-            salesFile.Quit();
-
-            Marshal.ReleaseComObject(salesWorkSheet);
-            Marshal.ReleaseComObject(salesWorkBook);
-            Marshal.ReleaseComObject(salesFile); */
-
             List<SaleItems> items = new List<SaleItems>();
 
             for (int i  = 0; i < (numLines / textFileDataSegments); ++i)
