@@ -57,16 +57,6 @@ namespace salesApplication
         
         static void Main(string[] args)
         {
-            //StreamReader configFile = new StreamReader("configFile.txt");
-
-            /*int textFileDataSegments = int.Parse(configFile.ReadLine());
-            int startIndex = int.Parse(configFile.ReadLine());
-            int numberOfItems = int.Parse(configFile.ReadLine());
-            string option1 = configFile.ReadLine();
-            string option2 = configFile.ReadLine();
-
-            configFile.Close();*/
-
             Console.BackgroundColor = ConsoleColor.DarkBlue; //code to change the color of the background color for the text
             Console.WriteLine("Hello! Welcome to My Online Store." +
                 "\n\nWhat will you like to shop for?\n");
